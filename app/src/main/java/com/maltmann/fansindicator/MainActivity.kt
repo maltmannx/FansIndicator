@@ -1,17 +1,12 @@
 package com.maltmann.fansindicator
 
-import android.content.Context
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.VibrationEffect
-import android.os.Vibrator
 import android.widget.Button
 import android.widget.TextView
 import androidx.annotation.RequiresApi
-import androidx.core.content.getSystemService
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.color.DynamicColors
-import java.security.Provider.Service
 
 class MainActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.R)
