@@ -20,13 +20,15 @@ class MainActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.R)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // Enable Dynamic Color to MainActivity
+        DynamicColors.applyToActivityIfAvailable(this)
+        //Must set dynamic color before content create
         setContentView(R.layout.activity_main)
 
         // Code starts here❤
         //==============================================
 
-        // Enable Dynamic Color to MainActivity
-        DynamicColors.applyToActivityIfAvailable(this)
 
         // Bind textview
         val textView = findViewById<TextView>(R.id.textView)
